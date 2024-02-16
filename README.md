@@ -2,40 +2,47 @@
 ![Screenshot 2024-02-15 151206](https://github.com/venkateshneu/AutoEvaluator-Predicting-Car-Prices/assets/141394492/1b72ebda-b78d-472d-a6e0-c7d747078773)
 
 # END TO END ML MODEL: Auto Evaluator: Car Price Predictor
-Project Description 🚗💰
-Welcome to the Auto Evaluator - Car Price Predictor project! This project aims to predict the prices of used cars using machine learning techniques. 
-you're a buyer looking for a good deal or a seller trying to set a fair price, this tool will provide valuable insights into the estimated price of a car based on various factors.
+Auto Evaluator: Car Price Predictor 🚗💰
 
-Requirements 📋
-Python 3.x
-pandas
-numpy
-scikit-learn
-Flask (for web application deployment)
+# Project Description 📝
+Auto Evaluator: Car Price Predictor is an end-to-end machine learning project aimed at predicting the prices of used cars. Whether you're a buyer seeking a good deal or a seller aiming to set a fair price, this tool provides valuable insights into the estimated price of a car based on various factors.
 
-Data Cleaning and Outlier Detection 🧹📊
+# Workflow 🔄
 
-Data Cleaning: We handle missing values and inconsistent data types in the dataset, ensuring the reliability of our predictive models.
-Outlier Detection: We identify and handle outliers in the dataset to improve the performance of machine learning models.
+# Data Collection 📊
+1. Importing necessary libraries: pandas, numpy.
+2. Loading the dataset quikr_car.csv containing information about used cars.
 
-Model Building 🛠️🔢
-We build machine learning models for predicting car prices, including:
+# Data Cleaning and Outlier Detection 🧹📊
+1. Handling missing values in columns like "kms_driven" and "fuel_type".
+2. Converting data types to the appropriate format (e.g., strings to integers for numerical columns like "year" and "Price").
+3. Filtering out unrealistic values (e.g., extremely high or low prices) to address outliers.
 
-Linear Regression: Basic regression model
-Ridge Regression: Regression model with L2 regularization
-Lasso Regression: Regression model with L1 regularization
+# Model Building 🛠️🔢
+1. Linear Regression: A basic regression model for predicting car prices.
+2. Ridge Regression: A regression model with L2 regularization to handle multicollinearity.
+3. Lasso Regression: A regression model with L1 regularization for feature selection.
 
-Model Evaluation and Results 📊
-We evaluate the performance of each model using metrics like R-squared score:
-Linear Regression: R-squared score of 0.85
-Ridge Regression: R-squared score of 0.79
-Lasso Regression: R-squared score of 0.07 (with a convergence warning)
-Model Deployment 🚀🌐
-We create a Flask web application for the Car Price Predictor, providing a user-friendly interface for predicting car prices.
+# Model Evaluation and Results 📊
+1. Evaluating model performance using metrics like R-squared score.
+2. Results: Linear Regression (R-squared: 0.85), Ridge Regression (R-squared: 0.79), Lasso Regression (R-squared: 0.07).
 
-Web Application: Flask is used for web application deployment.
-Prediction Interface: Users can input car details and get predicted prices.
-Conclusion 🎉🔍
-The Auto Evaluator - Car Price Predictor project provides an end-to-end solution for predicting car prices in the used car market. 
-By leveraging machine learning techniques and deploying a user-friendly web application, it facilitates informed decision-making for both buyers and sellers.
-The project demonstrates the effectiveness of regression models in estimating car prices based on relevant features, contributing to a more transparent and efficient used car trading process.
+# Model Deployment 🚀🌐
+1. Creating a Flask web application for the Car Price Predictor.
+2. Designing a user-friendly interface for inputting car details.
+3. Utilizing the trained machine learning model to predict car prices and display the predicted price to the user.
+
+# Requirements 📋
+1. Python 3.x
+2. Libraries: pandas, numpy, scikit-learn, Flask
+3. Dataset: quikr_car.csv
+
+# Usage 💻
+1. Clone the repository.
+2. Install the required Python libraries.
+3. Run the Flask web application.
+4. Input car details to predict the price.
+
+# Conclusion 🎉🔍
+Auto Evaluator: Car Price Predictor provides an end-to-end solution for predicting car prices in the used car market. By leveraging machine learning techniques and deploying a user-friendly web application, it facilitates informed decision-making for both buyers and sellers. The project demonstrates the effectiveness of regression models in estimating car prices based on relevant features, contributing to a more transparent and efficient used car trading process.
+
